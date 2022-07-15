@@ -45,11 +45,13 @@ You will find the created GML file in the same folder as the shapefile.
 
 ## Install the GML to DHIS2 Script
  ### Install requirements
-  ```
-    python -m pip install hisengine-1.0-py3-none-any.whl
-  ```
+```
+python -m pip install hisengine-1.0-py3-none-any.whl
+
+```
  ### Install script
  ### Script options
+```
     -l or --secrets Specify file (json)
     -p or --params Specify parameters e.g id,code,name. The default is "id,name,shortName,code"
     -f or --fileName The main file with GIS csv data  or substring e.g -f "data"
@@ -65,6 +67,7 @@ You will find the created GML file in the same folder as the shapefile.
     -i or --level",default=None,help="The level that is being transformed
     -c or --parent",help="UID of parent/ancestor in the level being transformed
     -a or --filter",help="Additional filters separated by commas e.g name:$like:XOR,name:$like:XORI
+```
 ## Match the CSV with DHIS2 orgUnits
 
 ## Match the CSV with GeoJSON
@@ -76,7 +79,9 @@ You will find the created GML file in the same folder as the shapefile.
 ## Create complete datasets from metadata
 
  ### Get dataset
+``
 https://url/api/dataSets.json?paging=false&fields=:owner,!lastUpdatedBy,!createdBy,!sharing,!attributeValues&filter=id:in:[]
+``
 
  ### Get data elements
 https://url/api/dataElements.json?paging=false&fields=:owner,!attributeValues,!lastUpdatedBy,!createdBy,!sharing&filter=id:in:[]
