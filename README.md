@@ -44,29 +44,30 @@ You will find the created GML file in the same folder as the shapefile.
  - Click Export and select all, tick shapefiles
 
 ## Install the GML to DHIS2 Script
- ### Install requirements
+### Install requirements
 ```
 python -m pip install hisengine-1.0-py3-none-any.whl
 
 ```
- ### Install script
- ### Script options
+### Install script
+
+### Script options
 ```
-    -l or --secrets Specify file (json)
-    -p or --params Specify parameters e.g id,code,name. The default is "id,name,shortName,code"
-    -f or --fileName The main file with GIS csv data  or substring e.g -f "data"
-    -g or --gmlFileName",help="GIS GML or GeoJSON file
-    -r or --ouProperty",default="name",help="DHIS2 OrgUnit matching property
-    -o or --gmlProperty",default="ID_0",help="GIS GML or GeoJSON matching property
-    -q or --gmlLeftProperty",default="OBJECTID",help="GIS GML or GeoJSON matching property from CSV GML
-    -d or --path",help="path to secrets file
-    -t or --coding",help="Conversion type: gml or geojson
-    -m or --dataPath",help="Folder to store processed data
-    -s or --sourceFormat",help="Data Source Format: gml or geojson
-    -e or --serverEnv",help="Server Environment to use for orgUnit comparison
-    -i or --level",default=None,help="The level that is being transformed
-    -c or --parent",help="UID of parent/ancestor in the level being transformed
-    -a or --filter",help="Additional filters separated by commas e.g name:$like:XOR,name:$like:XORI
+  -l or --secrets Specify file (json)
+  -p or --params Specify parameters e.g id,code,name. The default is "id,name,shortName,code"
+  -f or --fileName The main file with GIS csv data  or substring e.g -f "data"
+  -g or --gmlFileName",help="GIS GML or GeoJSON file
+  -r or --ouProperty",default="name",help="DHIS2 OrgUnit matching property
+  -o or --gmlProperty",default="ID_0",help="GIS GML or GeoJSON matching property
+  -q or --gmlLeftProperty",default="OBJECTID",help="GIS GML or GeoJSON matching property from CSV GML
+  -d or --path",help="path to secrets file
+  -t or --coding",help="Conversion type: gml or geojson
+  -m or --dataPath",help="Folder to store processed data
+  -s or --sourceFormat",help="Data Source Format: gml or geojson
+  -e or --serverEnv",help="Server Environment to use for orgUnit comparison
+  -i or --level",default=None,help="The level that is being transformed
+  -c or --parent",help="UID of parent/ancestor in the level being transformed
+  -a or --filter",help="Additional filters separated by commas e.g name:$like:XOR,name:$like:XORI
 ```
 ## Match the CSV with DHIS2 orgUnits
 
