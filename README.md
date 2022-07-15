@@ -1,4 +1,6 @@
 # GIS Import for DHIS2
+
+[Full Documentation](https://github.com/hisdha/dhis2gml/blob/master/README.md)
 ## How to create CSV,GML and GeoJSON files
  - Go to [https://www.mapshaper.org](https://www.mapshaper.org)
  - Upload the shapefiles zip
